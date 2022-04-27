@@ -1,0 +1,16 @@
+
+
+h1{
+    font-size: 5rem;
+}
+
+.Link{
+    background-color: blue;
+    font-size: 2rem;
+    color: white;
+    padding: .6rem 2rem;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 1rem;
+
+}

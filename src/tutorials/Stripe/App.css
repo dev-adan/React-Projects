@@ -1,0 +1,147 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+
+.main-page{
+    /* background: rgb(141,243,255); */
+    background: linear-gradient(90deg, rgba(141,243,255,1) 29%, rgba(71,115,145,1) 55%, rgba(193,22,218,1) 69%);
+    height: 100vh;
+    /* clip-path: polygon(0 0, 100% 0, 100% 54%, 0 100%); */
+
+    
+    background:linear-gradient(170deg, rgba(141, 243, 255, 1) 0%, rgba(193, 22, 218, 1) 56%, rgba(255, 255, 255, 1) 57%);
+    
+
+
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1.5rem;
+    color: #fff;
+
+}
+
+.navbar .logo h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    filter: contrast(2);
+    color: hsl(0, 0%, 100%);
+
+}
+
+.navbar .links a{
+    color: white;
+    margin: 0 3rem;
+    font-size: 1.2rem;
+   position: relative;
+}
+
+.navbar .right-button button{
+    background-color: #000;
+    color: #fff;
+    padding: .3rem 1rem;
+    border: none;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+    margin: 9rem auto;
+
+    
+    
+}
+
+.right-image{
+    width: 600px;
+    z-index: 20;
+ 
+}
+
+
+.left-content .payments{
+    display: block;
+    font-size: 3.8rem;
+
+}
+
+.left-content .infrastructure{
+    display: block;
+    font-size: 3.8rem;
+
+}
+.left-content .internet{
+    display: block;
+    font-size: 3.8rem;
+
+}
+
+.left-content p{
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    color: rgba(243, 239, 239, 0.9);
+}
+
+.left-content .startnow {
+    margin-top: 2rem;
+    background-color: black;
+    color: #fff;
+    padding: .4rem 1rem;
+}
+
+.bubble-nav{
+    position: absolute;
+    /* left: 50%; */
+  
+    transform: translate(-50%,);
+    background-color: white;
+   
+    display: inline-block;
+    margin: auto 10rem;
+    padding: 1rem 3rem;
+
+}
+
+.bubble-nav-ul {
+    display: flex;
+    padding: 1rem;
+    word-spacing: 1rem;
+    
+    
+
+}
+
+
+.bubble-nav-li{
+    margin: 0 1rem;
+    text-align: center;
+    
+   
+
+}
+
+.bubble-nav-li i{
+    color: black;
+    margin-right: 1rem;
+
+}
+

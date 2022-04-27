@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+
+}
+
+li{
+    list-style: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+.navbar {
+    background-color: rgba(3, 136, 245, 0.877);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1.7rem;
+    color: #fff;
+    font-size: 1.4rem;
+}
+
+.navbar-right-content{
+    font-size: 3rem;
+    position: relative;
+    
+    
+}
+
+.navbar-right-content a{
+    color: #fff;
+}
+
+.cart-count{
+    position: absolute;
+    content : '';
+    top : -.7rem;
+    left: 1.5rem;
+    font-size: 1.6rem;
+    background-color: rgba(3, 4, 82, 0.459);
+    border-radius: 50%;
+    padding: .2rem .9rem;
+    font-weight: bolder;
+}
+
+
+.main-heading { 
+    display: flex;
+    justify-content: center;
+    margin-top: 8rem;
+    font-size: 4rem;
+    margin-bottom: 8rem;
+}
+
+
+.single-product { 
+    /* display: flex; */
+    /* justify-content: space-around; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    width: 50%;
+    transform: translate(10%,0);
+    margin: 2rem auto;
+    
+}
+
+
+
+
+.single-product-left{
+    display: flex;
+    /* align-items: center; */
+    
+  
+
+
+}
+
+
+.image-div{
+
+}
+
+.single-product-left img{
+    height: 90px;
+
+}
+
+
+
+.single-product-left-details .product-title{
+    font-size: 1.4rem;
+    margin-bottom: .1rem;
+    font-weight: 500;
+   
+}
+
+.single-product-left-details .product-price{
+    font-size: 1.4rem;
+    font-weight: bolder;
+}
+
+.product-remove-button{
+    background : none;
+    border: none;
+    margin-top: .8rem;
+    color: blue;
+}
+
+
+.single-product-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items : center;
+    text-align: center;
+}
+
+.decrease-btn{
+    font-size: 1.7rem;
+    color: blueviolet;
+}
+
+.increase-btn{
+    font-size: 1.7rem;
+    color: blueviolet;
+}
+.qty{
+    font-size: 2rem;
+}
+
+.total{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    margin: 1rem auto;
+}
+
+.hr{
+
+    
+    margin-top: 4rem;
+    display: block;
+    width: 42%;
+    margin-left: 30%;
+    text-align: center;
+}
