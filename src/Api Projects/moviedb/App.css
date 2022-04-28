@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: azure;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.main-page {
+   
+  width: 50%;
+  margin: auto;
+  padding: 1rem;
+}
+.search-movies-heading {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  margin-top: 4rem;
+}
+
+.form {
+  /* font-size: 3rem; */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  
+}
+
+#search::placeholder {
+  font-size: 1.4rem;
+  /* padding-left: 2rem; */
+}
+
+#search {
+  /* font-size: 3rem; */
+  height: 4rem;
+  width: 50%;
+  /* border: none; */
+  border: 1px solid grey;
+  padding-left: 2rem;
+ 
+}
+
+
+.movies{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    /* width: 65%; */
+    grid-auto-rows: minmax(100px, auto);
+    
+}
+
+.single-poster {
+
+}
+
+.single-poster .image-container img{
+    width: 200px;
+}
