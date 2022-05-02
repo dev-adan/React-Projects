@@ -1,5 +1,5 @@
 // eslint-disable-next-line
-import React,{useState,useReducer, useEffect, useContext, useRef} from 'react';
+import React,{useReducer, useEffect, useContext, useRef} from 'react';
 import axios from 'axios';
 import { reducer } from './reducer';
 const AppContext = React.createContext();
@@ -10,11 +10,8 @@ const initialState  = {
     proceed : false,
     data : [],
     totalQuestions : 0,
+    correctAnswers : 0,
     message : '',
-
-  
-
-    
 }
 
 
@@ -49,7 +46,6 @@ const AppProvider = ({children}) => {
                 dispatch({type : 'data_not_recieved'})
             }
             
-
             dispatch({type : 'got_data', payload : results})
           
                 
@@ -82,8 +78,12 @@ const AppProvider = ({children}) => {
         dispatch({type : 'proceed', payload : data})
     }
 
+    const correctAnswerHandler = () => {
+        dispatch({type : 'correct_Answer'})
+    }
 
-    return <AppContext.Provider value={{...state,setCategory,setDifficulty, setProceed}}>{children}</AppContext.Provider>
+
+    return <AppContext.Provider value={{...state,setCategory,setDifficulty, setProceed,correctAnswerHandler}}>{children}</AppContext.Provider>
 }
 
 export const useGlobalContext = () => {

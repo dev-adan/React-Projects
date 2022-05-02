@@ -21,17 +21,18 @@ export const reducer = (state,action) => {
     }
 
     if(action.type ==='got_data'){
-
-        
-        
-        
+    
         return {...state,data : action.payload , totalQuestions : action.payload.length}
     }
 
     if(action.type === 'data_not_recieved'){
         return {...state,proceed :false, message : 'try again'}
     }
-    console.log('reducer state')
-    // return state;
+
+    if(action.type === 'correct_Answer'){
+        return {...state,correctAnswers : state.correctAnswers + 1}
+    }
+    
+    return state;
 
 }

@@ -5,7 +5,7 @@ import './App.css'
 import { useGlobalContext } from './context';
 
 const App = () => {
-  const {category,difficulty, proceed} = useGlobalContext();
+  const {category,difficulty, proceed, data} = useGlobalContext();
   return (
     <>
     {((category && difficulty) && proceed) ? <Quiz/> : <Modal/>}
