@@ -10,13 +10,13 @@ First you have to download the files, click on download as zip..it will start yo
 You will need to have npm package manager and node js installed on your computer.
 
 ## About Files
-So in src folder, you will find two folders with the name of ## Projects and ##Api projects. Api projects are those involving external apis and fetching data from api 
+So in src folder, you will find two folders with the name of # Projects and # Api projects. Api projects are those involving external apis and fetching data from api. 
 while 2nd folder it do not have projects involving Apis...
 
 ## Running the project
 
-Go to the folder and type ##npm-install , it will install all the required packages and files to run the project and you have to wait for few minutes or maybe less
-then type ##npm start and it will load the projects into your browser
+Go to the folder and type # npm-install , it will install all the required packages and files to run the project and you have to wait for few minutes or maybe less.
+then type # npm start and it will load the projects into your browser
 
 ## Changing the project
 
